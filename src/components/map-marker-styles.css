@@ -21,3 +21,15 @@
     border-color:gray;
 
 }
+
+.data-p {
+    margin-bottom: 0;
+}
+
+hr {
+    margin: 0
+}
+
+.label {
+    color: rgb(0, 26, 143)
+}

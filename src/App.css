@@ -5,10 +5,20 @@
   text-align: center;
 }
 
+.card{
+  padding: 0 !important;
+}
+
 .custom-hstack {
   display: flex;
   flex-flow: row nowrap;
 }
+
+.wrappable-custom-hstack{
+  display: flex;
+  flex-flow: row wrap;
+}
+
 .custom-vstack {
   display: flex;
   flex-flow: column nowrap;
