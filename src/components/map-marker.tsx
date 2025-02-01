@@ -1,6 +1,6 @@
 
 import "./map-marker-styles.css"
-import { FaInfoCircle } from "react-icons/fa"
+import { FaInfoCircle, FaTimes } from "react-icons/fa"
 import { useEffect, useState } from "react"
 import { IncidentJson, WeatherDataResponse, WeatherResponse } from "../interfaces"
 import { Card, CardContent, Modal } from "@mui/material"
@@ -68,9 +68,12 @@ const MapMarker = ({lat, lng, incident}: MapMarkerProps) => {
                 {/* <Box sx={{ border: 1, p: 1, bgcolor: "background.paper", width: "70%", alignSelf: "center"}}> */}
                     <div className="card">
                         <div className="card-header">
-                            <div className="custom-vstack">
-                            <p style={{fontSize: "1.5rem", marginBottom: 0}}>Common Place Name: {incident.address.common_place_name}</p>
-                            <p style={{fontSize: "1rem", marginBottom: 0}}>Address: {incident.address.address_line1}</p>
+                            <div className="custom-hstack">
+                                <div className="custom-vstack">
+                                <p style={{fontSize: "1.5rem", marginBottom: 0}}>Common Place Name: {incident.address.common_place_name}</p>
+                                <p style={{fontSize: "1rem", marginBottom: 0}}>Address: {incident.address.address_line1}</p>
+                                </div>
+                                <FaTimes onClick={onModalClose} style={{cursor: "pointer", marginLeft: "auto"}} />
                             </div>
                         </div>
                         <div className="card-body" style={{ height: "70vh", overflow: "auto"}}>
