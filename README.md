@@ -12,6 +12,10 @@ In a terminal run "git clone https://github.com/ThomasWatson123/IncidentVisualiz
 - Run "npm install"
 - Run "npm run dev"
 
+## App Functionality
+
+Once in the app you can upload a json file with the upload file button, this will place a marker on the map for the location of the incident. You can then click on the marker to see the data for the incident.
+
 ## General Information
 
 Improvements
