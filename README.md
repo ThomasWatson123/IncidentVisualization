@@ -24,5 +24,6 @@ Improvements
 - Styling improvements
 - I would have added the ability to remove the json files (Clear the point on the map)
 - I would have setup the google maps library to not be a development version
+- I would add error handling to check if the format of the json file is incorrect
 
 Time Spent On App: 5 hours
