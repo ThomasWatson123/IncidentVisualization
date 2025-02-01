@@ -2,7 +2,8 @@
 
 This application allows fire departments to visualize their json data on a map.
 - This application uses reactjs with typescript
-- You must have [node](https://nodejs.org/en/download) installed on your computer before running this app 
+- You must have [node](https://nodejs.org/en/download) installed on your computer before running this app
+- Reboot your computer after installing node
 
 ## Cloning the project
 
