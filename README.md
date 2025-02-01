@@ -1,50 +1,21 @@
-# React + TypeScript + Vite
+# Incident Visualization
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application allows fire departments to visual there json data on a map.
+- This application uses reactjs with typescript
+- You must have [node](https://nodejs.org/en/download) installed on your computer before running this app 
 
-Currently, two official plugins are available:
+## Cloning the project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In a terminal run "git clone https://github.com/ThomasWatson123/IncidentVisualization.git", then follow these commands in order
+- Once the project has been cloned cd into the IncidentVisualization folder
+- Open the .env file for the project and replace "\[METEOSTAT_API_KEY\]", with a api key from here https://rapidapi.com/meteostat/api/meteostat, you can create an account or use an existing account with a basic subscription which is free then once you've created an account copy the X-RapidAPI-Key for the variable.
 
-## Expanding the ESLint configuration
+## General Information
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Improvements
+- Make it so the user can upload more than one file and display multiple points on the map at the same time
+- Styling improvements
+- I would have added the ability to remove the json files (Clear the point on the map)
+- I would have setup the google maps library to not be a development version
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Time Spent On App: 5 hours

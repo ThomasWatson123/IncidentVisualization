@@ -79,5 +79,24 @@ interface Address {
     longitude: number,
     timestamp: string
   }
+
+  interface WeatherResponse {
+    meta: Object,
+    data: WeatherDataResponse[]
+  }
+
+  interface WeatherDataResponse {
+    time: string,
+    temp: number | null,
+    dwpt: number | null,
+    rhum: number | null,
+    prcp: number | null,
+    snow: number | null,
+    wdir: number | null,
+    wspd: number | null,
+    wpgt: number | null,
+    pres: number | null,
+
+  }
   
-  export type {Address, Apparatus, Description, FireDepartment, IncidentJson, UnitStatus}
+  export type {Address, Apparatus, Description, FireDepartment, IncidentJson, UnitStatus, WeatherResponse, WeatherDataResponse}
